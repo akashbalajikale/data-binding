@@ -9,6 +9,11 @@ import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
 export class AppComponent {
   title = 'test';
 
+public product = "this is property binding example";
+
+
+
+
   person : Array<iperson> =[
     { id: 1, name: 'John Doe', email: 'john@example.com', role: 'Admin' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'User' },
