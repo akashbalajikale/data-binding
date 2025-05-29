@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
 
 @Component({
@@ -6,14 +6,18 @@ import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'test';
 
 public product = "this is property binding example";
 
 public skillName :string = "love front end dev"
-
-
+public isdisabled : boolean = true
+ngOnInit(): void {
+  setTimeout(() => {
+    this.isdisabled = !this.isdisabled
+  }, 4000);
+}
   person : Array<iperson> =[
     { id: 1, name: 'John Doe', email: 'john@example.com', role: 'Admin' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'User' },
