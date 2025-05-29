@@ -11,7 +11,7 @@ export class AppComponent {
 
 public product = "this is property binding example";
 
-
+public skillName :string = "love front end dev"
 
 
   person : Array<iperson> =[
