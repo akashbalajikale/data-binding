@@ -8,8 +8,10 @@ import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
 })
 export class AppComponent implements OnInit {
   title = 'test';
+public productName : string = "string interpolation property";
+public productID : string= "12345";
 
-public product = "this is property binding example";
+public productProp = "this is property binding example";
 
 public skillName :string = "love front end dev"
 public isdisabled : boolean = true
