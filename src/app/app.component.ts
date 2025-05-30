@@ -42,9 +42,23 @@ OnprodSearch(eve : Event){
 
   this.searchPrname = val
 }
+OnProdAdd(){
+  this.cartcount ++;
+  if(this.cartcount === 1){
+    this.productstaus = `${this.cartcount} product added in cart`
+  }else{
+    this.productstaus = `${this.cartcount} Products are added in cart`
+  }
+}
 
-
-
+OnRemove(){
+  this.cartcount --;
+  if(this.cartcount < 1){
+    this.productstaus = `No Product added yet`
+  }else{
+    this.productstaus = `${this.cartcount} Products are added in cart`
+  }
+}
 
 
 
@@ -357,10 +371,4 @@ OnprodSearch(eve : Event){
  
 }
 
-function OnproductSerach(eve: Event, Event: { new(type: string, eventInitDict?: EventInit): Event; prototype: Event; readonly NONE: 0; readonly CAPTURING_PHASE: 1; readonly AT_TARGET: 2; readonly BUBBLING_PHASE: 3; }) {
-  throw new Error('Function not implemented.');
-}
-function OnprodSearch(eve: Event, Event: { new(type: string, eventInitDict?: EventInit): Event; prototype: Event; readonly NONE: 0; readonly CAPTURING_PHASE: 1; readonly AT_TARGET: 2; readonly BUBBLING_PHASE: 3; }) {
-  throw new Error('Function not implemented.');
-}
-
+ 

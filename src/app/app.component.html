@@ -127,7 +127,19 @@
     <div class="col-md-6 offset-md-3">
        <!-- Event binding -->
       <h4><strong>Event binding</strong></h4>
-      <input   (keyup)="OnkeyUp($event)" type="text" class="form-control mt-4" placeholder="Type here">
+      <!-- <input   (keyup)="OnkeyUp($event)" type="text" class="form-control mt-4" placeholder="Type here"> -->
+
+      <button class="btn btn-primary mr-3" 
+      (click)="OnProdAdd()"
+      >
+        + Product
+      </button>
+
+       <button class="btn btn-info"  (click)="OnRemove()" >
+        - Product
+      </button>
+
+      <p class="alert alert-secondary mt-3" [innerHTML]="productstaus"></p>
       <hr>
 
       <input (keyup)="OnprodSearch($event)" type="text" class="form-control" placeholder="Search Product here">
