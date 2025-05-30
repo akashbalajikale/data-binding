@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 public productName : string = "string interpolation property";
 public productID : string= "12345";
 
-public productProp = "this is property binding example";
+public productProp = " property binding example";
 
 public skillName :string = "love front end dev"
 public isdisabled : boolean = true

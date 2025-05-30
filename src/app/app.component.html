@@ -91,7 +91,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 text-capitalize mt-4 text-center">
+    <div class="col-md-6 offset-md-3 text-capitalize mt-4 text-center">
       <!-- data binding -->
 
       <!-- there is two way of data binding  >> one way data binding & Two way of data bindng-->
@@ -99,6 +99,14 @@
       <!-- string interpolation -->
        <p>this is   <strong>{{productName}}</strong> with id <strong>{{productID}}</strong></p>
 
+
+       <!-- property binding -->
+        <p class="alert alert-info" 
+        [innerHTML]="productProp">  
+        </p>
+<hr>
+        <input [value]="skillName" type="text" class="form-control">
+       
     </div>
   </div>
 </div>
