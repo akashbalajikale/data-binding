@@ -89,7 +89,7 @@
   </div>
  </div>
 
-<div class="container">
+<div class="container py-5">
   <div class="row">
     <div class="col-md-6 offset-md-3 text-capitalize mt-4 text-center">
       <!-- data binding -->
@@ -115,7 +115,11 @@
         
         <p class="mt-4 alert alert-warning" [innerHTML]="'this is default value we set manually'"></p>
 
-        <img [src]="pic" alt="Avenger" class=" h-100">
+        <img [src]="pic" alt="Avenger" class="w-100">
+
+        <!-- Event binding -->
+
+        <input   (keyup)="OnkeyUp($event)" type="text" class="form-control mt-4" placeholder="Type here">
 
       </div>
   </div>
