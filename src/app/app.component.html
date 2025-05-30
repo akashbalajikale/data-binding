@@ -107,7 +107,17 @@
 <hr>
         <input [value]="skillName" type="text" class="form-control">
        
-    </div>
+
+        <!-- why we use property binding over string interpolation because some time backend send data with HTML like <strong> I love angular</strong>
+        here we cant show this data in template using string interpolation bcz template consider this is string it will show  all data  with html that why here we have to use property bindin -->
+      
+        <!-- we can set any default value to any template -->
+        
+        <p class="pt-2 alert alert-warning" [innerHTML]="'this is default value we set manually'"></p>
+
+        
+
+      </div>
   </div>
 </div>
 
