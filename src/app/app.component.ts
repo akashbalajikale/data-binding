@@ -7,6 +7,7 @@ import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+ 
   title = 'test';
 public productName : string = "string interpolation property";
 public productID : string= "12345";
@@ -15,8 +16,15 @@ public productProp = " property binding example";
 
 public skillName :string = "love front end dev"
 
-public pic : string = "https://img.freepik.com/premium-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144125.jpg?ga=GA1.1.1981978221.1747301521&w=740"
-public isdisabled : boolean = true
+public pic : string = "https://img.freepik.com/premium-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144125.jpg?ga=GA1.1.1981978221.1747301521&w=740";
+public isdisabled : boolean = true;
+
+public searchPrname :string =''
+public productstaus :string = 'No Product added yet'
+public cartcount :number = 0
+
+
+
 ngOnInit(): void {
   setTimeout(() => {
     this.isdisabled = !this.isdisabled
@@ -26,10 +34,14 @@ ngOnInit(): void {
 OnkeyUp(eve : Event){
 let val = (eve.target as HTMLInputElement).value
 console.log(val);
-
+ 
 }
 
+OnprodSearch(eve : Event){
+  let val = (eve.target as HTMLInputElement).value
 
+  this.searchPrname = val
+}
 
 
 
@@ -344,3 +356,11 @@ console.log(val);
 ];
  
 }
+
+function OnproductSerach(eve: Event, Event: { new(type: string, eventInitDict?: EventInit): Event; prototype: Event; readonly NONE: 0; readonly CAPTURING_PHASE: 1; readonly AT_TARGET: 2; readonly BUBBLING_PHASE: 3; }) {
+  throw new Error('Function not implemented.');
+}
+function OnprodSearch(eve: Event, Event: { new(type: string, eventInitDict?: EventInit): Event; prototype: Event; readonly NONE: 0; readonly CAPTURING_PHASE: 1; readonly AT_TARGET: 2; readonly BUBBLING_PHASE: 3; }) {
+  throw new Error('Function not implemented.');
+}
+
