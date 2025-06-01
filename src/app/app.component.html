@@ -161,8 +161,19 @@
        </div>
 
        <input type="text"  class="form-control" [(ngModel)]="searchngModel">
-        <p class="alert alert-secondary mt-3" [innerHTML]="searchngModel"></p>
+        <p class="alert alert-info mt-3" [innerHTML]="searchngModel"></p>
       <hr>
+
+      <p class="alert alert-dark"
+       [ngStyle]="{
+        backgroundColor : isProdAvailable ? 'orange' : 'red'
+       }"
+      >
+        the product {{productName}} with id  {{productID}}
+      </p>
+         <p>
+        the product {{productName}} with id  {{productID}}
+      </p>
     </div>
   </div>
 </div>

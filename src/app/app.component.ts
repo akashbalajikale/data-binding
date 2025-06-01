@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'test';
 public proName :string ="this is ngModel property"
 public searchngModel !:string;
-public productName : string = "string interpolation property";
+public productName : string = " Samsung";
 public productID : string= "12345";
 
 public productProp = " property binding example";
@@ -23,14 +23,15 @@ public pic : string = "https://img.freepik.com/premium-photo/woman-beach-with-he
 public isdisabled : boolean = true;
 public searchPrname :string = ''
 public productstaus :string = 'No Product added yet'
-public cartcount :number = 0
-
-
+public cartcount :number = 0;
+public isProdAvailable !: boolean;
 
 ngOnInit(): void {
   setTimeout(() => {
     this.isdisabled = !this.isdisabled
   }, 4000);
+
+  this.isProdAvailable = Math.random() >= .5 ? true : false
 }
 
 OnkeyUp(eve : Event){
