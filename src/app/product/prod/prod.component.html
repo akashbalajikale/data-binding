@@ -1,35 +1,35 @@
  <div class="container">
     <div class="row">
-        <div class="col-md-6 offset-md-3">
-             
-<h2 *ngIf="isLoggedIn">Welcome back!</h2>
+       <div class="col-md-6 offset-md-3">
+                            
+                <h2 *ngIf="isLoggedIn">Welcome back!</h2>
 
- 
-<h2 *appUnless="isLoggedIn">Please log in to continue</h2>
+                
+                <h2 *appUnless="isLoggedIn">Please log in to continue</h2>
 
- 
-<ul>
-  <li *ngFor="let item of items">{{ item }}</li>
-</ul>
+                
+                <ul>
+                <li *ngFor="let item of items">{{ item }}</li>
+                </ul>
 
- 
-<div [ngSwitch]="status">
-  <p *ngSwitchCase="'active'">Status: Active</p>
-  <p *ngSwitchCase="'inactive'">Status: Inactive</p>
-  <p *ngSwitchDefault>Status: Unknown</p>
-</div>
- 
+                
+                <div [ngSwitch]="status">
+                <p *ngSwitchCase="'active'">Status: Active</p>
+                <p *ngSwitchCase="'inactive'">Status: Inactive</p>
+                <p *ngSwitchDefault>Status: Unknown</p>
+                </div>
+                
 
-<h3>Repeat Example</h3>
-<p *appRepeat="3">This line is repeated</p>
+                <h3>Repeat Example</h3>
+                <p *appRepeat="3">This line is repeated</p>
 
 
 
-<button (click)="toggleClass()">Toggle Active Class</button>
+                <button (click)="toggleClass()">Toggle Active Class</button>
 
-<p [ngClass]="{ 'active': isActive, 'inactive': !isActive }">
-  This paragraph changes style based on the class.
-</p>
+                <p [ngClass]="{ 'active': isActive, 'inactive': !isActive }">
+                This paragraph changes style based on the class.
+                </p>
         </div>
     </div>
  </div>
