@@ -135,7 +135,7 @@
         + Product
       </button>
 
-       <button class="btn btn-info"  (click)="OnRemove()" >
+       <button class="btn btn-info"  (click)="OnRemove()" [disabled]="cartcount === 0" >
         - Product
       </button>
 
@@ -143,7 +143,20 @@
       <hr>
 
       <input (keyup)="OnprodSearch($event)" type="text" class="form-control" placeholder="Search Product here">
-      <p class="alert alert-primary mt-1" [innerHTML]="searchPrname"></p>
+      <p class="alert alert-primary mt-1" [innerHTML]="searchPrname" *ngIf="searchPrname.length > 0"></p>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ofset-md-3">
+      <h2>Two-Way Binding Example</h2>
+
+<label for="nameInput">Enter your name:</label>
+<input id="nameInput" [(ngModel)]="proName">
+
+<p>Hello, {{ proName }}!</p>
 
     </div>
   </div>

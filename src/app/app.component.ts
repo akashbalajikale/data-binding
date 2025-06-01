@@ -7,8 +7,8 @@ import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
- 
   title = 'test';
+public proName :string ="this is ngModel property"
 public productName : string = "string interpolation property";
 public productID : string= "12345";
 
@@ -17,9 +17,10 @@ public productProp = " property binding example";
 public skillName :string = "love front end dev"
 
 public pic : string = "https://img.freepik.com/premium-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144125.jpg?ga=GA1.1.1981978221.1747301521&w=740";
-public isdisabled : boolean = true;
 
-public searchPrname :string =''
+
+public isdisabled : boolean = true;
+public searchPrname :string = ''
 public productstaus :string = 'No Product added yet'
 public cartcount :number = 0
 
@@ -43,11 +44,11 @@ OnprodSearch(eve : Event){
   this.searchPrname = val
 }
 OnProdAdd(){
-  this.cartcount ++;
+  this.cartcount ++ ;
   if(this.cartcount === 1){
     this.productstaus = `${this.cartcount} product added in cart`
   }else{
-    this.productstaus = `${this.cartcount} Products are added in cart`
+    this.productstaus = `${this.cartcount} Products are added in cart`;
   }
 }
 
@@ -56,7 +57,7 @@ OnRemove(){
   if(this.cartcount < 1){
     this.productstaus = `No Product added yet`
   }else{
-    this.productstaus = `${this.cartcount} Products are added in cart`
+    this.productstaus = `${this.cartcount} Products are added in cart`;
   }
 }
 
