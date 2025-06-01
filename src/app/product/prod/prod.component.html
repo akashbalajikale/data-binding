@@ -1,6 +1,21 @@
-<p>prod works!</p>
-<div [ngSwitch]="color">
-  <p *ngSwitchCase="'red'">Red selected</p>
-  <p *ngSwitchCase="'blue'">Blue selected</p>
-  <p *ngSwitchDefault>Unknown color</p>
+ 
+<h2 *ngIf="isLoggedIn">Welcome back!</h2>
+
+ 
+<h2 *appUnless="isLoggedIn">Please log in to continue</h2>
+
+ 
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+ 
+<div [ngSwitch]="status">
+  <p *ngSwitchCase="'active'">Status: Active</p>
+  <p *ngSwitchCase="'inactive'">Status: Inactive</p>
+  <p *ngSwitchDefault>Status: Unknown</p>
 </div>
+ 
+
+<h3>Repeat Example</h3>
+<p *appRepeat="3">This line is repeated</p>

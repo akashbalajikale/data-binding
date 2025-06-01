@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdComponent implements OnInit {
 
-  color = 'red';
+ isLoggedIn = false;
+  status = 'inactive';
+  items = ['Angular', 'React', 'Vue'];
 
   constructor() { }
 
