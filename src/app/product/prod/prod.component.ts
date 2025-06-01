@@ -11,6 +11,12 @@ export class ProdComponent implements OnInit {
   status = 'inactive';
   items = ['Angular', 'React', 'Vue'];
 
+
+  isActive = false;
+
+  toggleClass() {
+    this.isActive = !this.isActive;
+  }
   constructor() { }
 
   ngOnInit(): void {

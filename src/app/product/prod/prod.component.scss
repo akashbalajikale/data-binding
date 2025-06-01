@@ -4,3 +4,12 @@ h2 {
 p {
   font-weight: bold;
 }
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: gray;
+  font-style: italic;
+}
