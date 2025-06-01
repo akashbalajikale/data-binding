@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
+ 
 
 @Component({
   selector: 'app-root',
@@ -85,7 +85,7 @@ OnRemove(){
 
 
 
-  person : Array<iperson> =[
+  person : Array<any> =[
     { id: 1, name: 'John Doe', email: 'john@example.com', role: 'Admin' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'User' },
     { id: 3, name: 'Alice Brown', email: 'alice@example.com', role: 'Editor' },
@@ -93,7 +93,7 @@ OnRemove(){
     { id: 5, name: 'Charlie Green', email: 'charlie@example.com', role: 'Admin' }
   ]
  
-   cricketers : Array<iCricket> = [
+   cricketers : Array<any> = [
     {
       name: "Sachin Tendulkar",
       country: "India",
@@ -291,7 +291,7 @@ OnRemove(){
    
   ];
   
-  users: Array<users> = [
+  users: Array<any> = [
     { id: 1, name: 'John Doe', email: 'john@example.com', role: 'Admin' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'User' },
     { id: 3, name: 'Alice Brown', email: 'alice@example.com', role: 'Editor' },
@@ -300,7 +300,7 @@ OnRemove(){
   ];
   
   
- products: Array<products>= [
+ products: Array<any>= [
   { id: 101, name: 'Laptop', price: 999, category: 'Electronics' },
   { id: 102, name: 'Phone', price: 699, category: 'Electronics' },
   { id: 103, name: 'Shoes', price: 89, category: 'Fashion' },
