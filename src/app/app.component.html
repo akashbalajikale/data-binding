@@ -160,6 +160,9 @@
           <p class="alert alert-warning my-2">Hello, {{ proName }}!</p>
        </div>
 
+       <input type="text"  class="form-control" [(ngModel)]="searchngModel">
+        <p class="alert alert-secondary mt-3" [innerHTML]="searchngModel"></p>
+      <hr>
     </div>
   </div>
 </div>

@@ -9,6 +9,7 @@ import { iCricket,  iperson,  products, users} from 'src/shared/models/model';
 export class AppComponent implements OnInit {
   title = 'test';
 public proName :string ="this is ngModel property"
+public searchngModel !:string;
 public productName : string = "string interpolation property";
 public productID : string= "12345";
 
