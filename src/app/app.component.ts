@@ -300,77 +300,77 @@ OnRemove(){
   ];
   
   
-//  products: Array<any>= [
-//   { id: 101, name: 'Laptop', price: 999, category: 'Electronics' },
-//   { id: 102, name: 'Phone', price: 699, category: 'Electronics' },
-//   { id: 103, name: 'Shoes', price: 89, category: 'Fashion' },
-//   { id: 104, name: 'Watch', price: 150, category: 'Accessories' },
-//   { id: 105, name: 'Backpack', price: 50, category: 'Travel' }
-// ];
+ products: Array<any>= [
+  { id: 101, name: 'Laptop', price: 999, category: 'Electronics' },
+  { id: 102, name: 'Phone', price: 699, category: 'Electronics' },
+  { id: 103, name: 'Shoes', price: 89, category: 'Fashion' },
+  { id: 104, name: 'Watch', price: 150, category: 'Accessories' },
+  { id: 105, name: 'Backpack', price: 50, category: 'Travel' }
+];
 
-//  orders = [
-//   { orderId: 1001, user: 'John Doe', amount: 250, status: 'Pending' },
-//   { orderId: 1002, user: 'Jane Smith', amount: 480, status: 'Shipped' },
-//   { orderId: 1003, user: 'Alice Brown', amount: 120, status: 'Delivered' },
-//   { orderId: 1004, user: 'Bob White', amount: 320, status: 'Processing' },
-//   { orderId: 1005, user: 'Charlie Green', amount: 90, status: 'Cancelled' }
-// ];
+ orders = [
+  { orderId: 1001, user: 'John Doe', amount: 250, status: 'Pending' },
+  { orderId: 1002, user: 'Jane Smith', amount: 480, status: 'Shipped' },
+  { orderId: 1003, user: 'Alice Brown', amount: 120, status: 'Delivered' },
+  { orderId: 1004, user: 'Bob White', amount: 320, status: 'Processing' },
+  { orderId: 1005, user: 'Charlie Green', amount: 90, status: 'Cancelled' }
+];
 
-//  employees = [
-//   { id: 201, name: 'Sam Wilson', department: 'HR', salary: 60000 },
-//   { id: 202, name: 'Diana Prince', department: 'Finance', salary: 75000 },
-//   { id: 203, name: 'Bruce Wayne', department: 'IT', salary: 90000 },
-//   { id: 204, name: 'Clark Kent', department: 'Marketing', salary: 65000 },
-//   { id: 205, name: 'Peter Parker', department: 'Sales', salary: 55000 }
-// ];
+ employees = [
+  { id: 201, name: 'Sam Wilson', department: 'HR', salary: 60000 },
+  { id: 202, name: 'Diana Prince', department: 'Finance', salary: 75000 },
+  { id: 203, name: 'Bruce Wayne', department: 'IT', salary: 90000 },
+  { id: 204, name: 'Clark Kent', department: 'Marketing', salary: 65000 },
+  { id: 205, name: 'Peter Parker', department: 'Sales', salary: 55000 }
+];
 
-//  books = [
-//   { id: 301, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
-//   { id: 302, title: '1984', author: 'George Orwell', year: 1949 },
-//   { id: 303, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
-//   { id: 304, title: 'Moby Dick', author: 'Herman Melville', year: 1851 },
-//   { id: 305, title: 'Pride and Prejudice', author: 'Jane Austen', year: 1813 }
-// ];
+ books = [
+  { id: 301, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
+  { id: 302, title: '1984', author: 'George Orwell', year: 1949 },
+  { id: 303, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+  { id: 304, title: 'Moby Dick', author: 'Herman Melville', year: 1851 },
+  { id: 305, title: 'Pride and Prejudice', author: 'Jane Austen', year: 1813 }
+];
 
-//  students = [
-//   { id: 401, name: 'Emma Johnson', grade: 'A', age: 16 },
-//   { id: 402, name: 'Liam Brown', grade: 'B', age: 17 },
-//   { id: 403, name: 'Olivia Davis', grade: 'A', age: 15 },
-//   { id: 404, name: 'Noah Wilson', grade: 'C', age: 16 },
-//   { id: 405, name: 'Ava Martinez', grade: 'B', age: 17 }
-// ];
+ students = [
+  { id: 401, name: 'Emma Johnson', grade: 'A', age: 16 },
+  { id: 402, name: 'Liam Brown', grade: 'B', age: 17 },
+  { id: 403, name: 'Olivia Davis', grade: 'A', age: 15 },
+  { id: 404, name: 'Noah Wilson', grade: 'C', age: 16 },
+  { id: 405, name: 'Ava Martinez', grade: 'B', age: 17 }
+];
 
-//  cars = [
-//   { id: 501, brand: 'Toyota', model: 'Corolla', year: 2022 },
-//   { id: 502, brand: 'Honda', model: 'Civic', year: 2021 },
-//   { id: 503, brand: 'Ford', model: 'Mustang', year: 2020 },
-//   { id: 504, brand: 'Tesla', model: 'Model 3', year: 2023 },
-//   { id: 505, brand: 'BMW', model: 'X5', year: 2019 }
-// ];
+ cars = [
+  { id: 501, brand: 'Toyota', model: 'Corolla', year: 2022 },
+  { id: 502, brand: 'Honda', model: 'Civic', year: 2021 },
+  { id: 503, brand: 'Ford', model: 'Mustang', year: 2020 },
+  { id: 504, brand: 'Tesla', model: 'Model 3', year: 2023 },
+  { id: 505, brand: 'BMW', model: 'X5', year: 2019 }
+];
 
-//  transactions = [
-//   { id: 601, user: 'John Doe', amount: 100, type: 'Deposit' },
-//   { id: 602, user: 'Jane Smith', amount: 50, type: 'Withdrawal' },
-//   { id: 603, user: 'Alice Brown', amount: 200, type: 'Deposit' },
-//   { id: 604, user: 'Bob White', amount: 75, type: 'Withdrawal' },
-//   { id: 605, user: 'Charlie Green', amount: 150, type: 'Deposit' }
-// ];
+ transactions = [
+  { id: 601, user: 'John Doe', amount: 100, type: 'Deposit' },
+  { id: 602, user: 'Jane Smith', amount: 50, type: 'Withdrawal' },
+  { id: 603, user: 'Alice Brown', amount: 200, type: 'Deposit' },
+  { id: 604, user: 'Bob White', amount: 75, type: 'Withdrawal' },
+  { id: 605, user: 'Charlie Green', amount: 150, type: 'Deposit' }
+];
 
-//  movies = [
-//   { id: 701, title: 'Inception', director: 'Christopher Nolan', year: 2010 },
-//   { id: 702, title: 'Titanic', director: 'James Cameron', year: 1997 },
-//   { id: 703, title: 'Avatar', director: 'James Cameron', year: 2009 },
-//   { id: 704, title: 'The Dark Knight', director: 'Christopher Nolan', year: 2008 },
-//   { id: 705, title: 'Forrest Gump', director: 'Robert Zemeckis', year: 1994 }
-// ];
+ movies = [
+  { id: 701, title: 'Inception', director: 'Christopher Nolan', year: 2010 },
+  { id: 702, title: 'Titanic', director: 'James Cameron', year: 1997 },
+  { id: 703, title: 'Avatar', director: 'James Cameron', year: 2009 },
+  { id: 704, title: 'The Dark Knight', director: 'Christopher Nolan', year: 2008 },
+  { id: 705, title: 'Forrest Gump', director: 'Robert Zemeckis', year: 1994 }
+];
 
-//  cities = [
-//   { id: 801, name: 'New York', country: 'USA', population: 8419600 },
-//   { id: 802, name: 'Tokyo', country: 'Japan', population: 37400068 },
-//   { id: 803, name: 'London', country: 'UK', population: 8982000 },
-//   { id: 804, name: 'Paris', country: 'France', population: 2148000 },
-//   { id: 805, name: 'Berlin', country: 'Germany', population: 3769000 }
-// ];
+ cities = [
+  { id: 801, name: 'New York', country: 'USA', population: 8419600 },
+  { id: 802, name: 'Tokyo', country: 'Japan', population: 37400068 },
+  { id: 803, name: 'London', country: 'UK', population: 8982000 },
+  { id: 804, name: 'Paris', country: 'France', population: 2148000 },
+  { id: 805, name: 'Berlin', country: 'Germany', population: 3769000 }
+];
  
 }
 
