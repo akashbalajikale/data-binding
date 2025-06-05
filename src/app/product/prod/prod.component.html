@@ -1,7 +1,8 @@
  <div class="container">
     <div class="row">
-       <div class="col-md-6 offset-md-3">
+       <!-- <div class="col-md-6 offset-md-3">
                             
+         <div>
                 <h2 *ngIf="isLoggedIn">Welcome back!</h2>
 
                 
@@ -27,9 +28,53 @@
 
                 <button (click)="toggleClass()">Toggle Active Class</button>
 
-                <p [ngClass]="{ 'active': isActive, 'inactive': !isActive }">
-                This paragraph changes style based on the class.
+                <p
+                class="p-2"
+                [ngClass]="{ 'active': isActive, 'inactive': !isActive }">
+                     LeetCode
+                     https://leetcode.com
+                     LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews. Create Account. Start Exploring.
+                     Login page
+                     Problems(/problemset/all/)
+                     Level up your coding skills and quickly land a job. This is the ...
+                     Contest(s)
+                     Enhance your coding abilities and get valuable real-world ...
+                     LeetCode algorithms problems
                 </p>
-        </div>
-    </div>
+         </div>
+        </div> -->
+      <div class="col-md-6 offset-md-3 mt-3">
+       
+         <!-- <p class="alert alert-info">
+            This is prudct {{productName}} with id {{productId}}
+
+             
+         </p>
+             <strong *ngIf="isProductAav;else noproduct">
+               The product is available 
+            </strong>
+
+            <ng-template #noproduct> 
+                  The product is not available 
+            </ng-template> -->
+           
+            <p class="alert alert-success" *ngIf="color === 'success';else warn">
+               <strong> success</strong>
+            </p>
+            <ng-template #warn> 
+               <p class="alert alert-warning" *ngIf="color === 'error';else error">
+                  warning
+               </p>
+            </ng-template>
+            <ng-template #error>
+               <p class="alert alert-danger">
+                  error
+               </p>
+            </ng-template>
+
+      </div>
+      
+
+      </div>
+
  </div>
