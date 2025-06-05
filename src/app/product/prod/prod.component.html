@@ -72,6 +72,22 @@
                </p>
             </ng-template>
 
+
+            <p class="py-1"
+               [ngStyle]="{
+                  backgroundColor : isProdAdd ? 'orange' : '#ccc'
+               }"
+
+               [ngClass]="{
+                  'text-white' : isProdAdd,
+                  'text-danger' : !isProdAdd,
+                  'p-3' : isProdAdd,
+                  'p-2' : !isProdAdd
+               }"
+            >
+                this is samsung product with id no 3434 
+            </p>
+            {{isProdAdd}}
       </div>
       
 

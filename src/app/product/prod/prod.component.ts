@@ -20,11 +20,15 @@ export class ProdComponent implements OnInit {
   public productId : number = 123;
   isProductAav !: boolean;
   color !:string;
+  isProdAdd !: boolean
+  bgcolor !: string
   constructor() { }
 
   ngOnInit(): void {
-    // this.isProductAav = Math.random() >= .5 ? true : false;
+    this.isProductAav = Math.random() >= .5 ? true : false;
     this.setcolor()
+     this.isProdAdd = Math.random() >= .5 ? true : false;
+     this.getcolor()
   }
 
   setcolor(){
@@ -37,6 +41,15 @@ export class ProdComponent implements OnInit {
     }else{
       this.color = "error"
     }
+  }
+
+  getcolor(){
+    if(this.isProdAdd){
+      this.bgcolor = "orange";
+    }else{
+      this.bgcolor = "#ccc"
+    }
+   return this.bgcolor
   }
 
 }
